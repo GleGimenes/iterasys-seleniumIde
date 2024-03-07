@@ -1,0 +1,197 @@
+{
+  "id": "bd8c0959-c1bd-4fdb-a620-c198a654664f",
+  "version": "2.0",
+  "name": "Botão de acessibilidade - Libras",
+  "url": "https://www.cacaushow.com.br",
+  "tests": [{
+    "id": "d75611c2-8f8b-4c3f-a2de-8b2e95940f8c",
+    "name": "Botao de acessibilidade - Libras",
+    "commands": [{
+      "id": "d15cb08d-15f1-4c12-83d9-d03918a5eeb7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93c64b61-5f26-4a89-9c7a-0343480b09ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "913x673",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a16775b-af6c-4687-ae89-70a7b66fd36f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34d1b856-8fec-4bc0-9460-b4f8d5e0d024",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-rybena-sign-language > .ryb-ignore:nth-child(1)",
+      "targets": [
+        ["css=.btn-rybena-sign-language > .ryb-ignore:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Traduzir para Libras']", "xpath:img"],
+        ["xpath=//div[@id='rybena-sidebar']/div/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e150a154-c00d-4b7c-8425-64d7eeab07d2",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=rybena-handle-top",
+      "targets": [
+        ["id=rybena-handle-top", "id"],
+        ["css=#rybena-handle-top", "css:finder"],
+        ["xpath=//div[@id='rybena-handle-top']", "xpath:attributes"],
+        ["xpath=//div[@id='rybena-player-div']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]", "xpath:position"]
+      ],
+      "value": "183,26"
+    }, {
+      "id": "09a5ba60-2f26-49c4-9626-dc5dc8a14658",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=rybena-handle-top",
+      "targets": [
+        ["id=rybena-handle-top", "id"],
+        ["css=#rybena-handle-top", "css:finder"],
+        ["xpath=//div[@id='rybena-handle-top']", "xpath:attributes"],
+        ["xpath=//div[@id='rybena-player-div']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]", "xpath:position"]
+      ],
+      "value": "183,26"
+    }, {
+      "id": "83fd2d8a-e458-4c25-9952-d5e94c12ea53",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=rybena-handle-top",
+      "targets": [
+        ["id=rybena-handle-top", "id"],
+        ["css=#rybena-handle-top", "css:finder"],
+        ["xpath=//div[@id='rybena-handle-top']", "xpath:attributes"],
+        ["xpath=//div[@id='rybena-player-div']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]", "xpath:position"]
+      ],
+      "value": "183,26"
+    }, {
+      "id": "e3b9870f-fa89-45b8-9834-520d452f7436",
+      "comment": "",
+      "command": "click",
+      "target": "id=rybena-handle-top",
+      "targets": [
+        ["id=rybena-handle-top", "id"],
+        ["css=#rybena-handle-top", "css:finder"],
+        ["xpath=//div[@id='rybena-handle-top']", "xpath:attributes"],
+        ["xpath=//div[@id='rybena-player-div']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[14]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2677e1-ffc4-4636-814e-b29989f8b918",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content-asset:nth-child(2)",
+      "targets": [
+        ["css=.content-asset:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div[4]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "508b8db4-4ab5-4396-ada3-2db2ed99ff99",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=11",
+      "targets": [
+        ["index=11"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e7b67b4-461c-413d-87cd-fdb14f5c7ce5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dec03ca-2549-4fa6-b8c4-ef6b1197d114",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=editable-text-1541975415318",
+      "targets": [
+        ["id=editable-text-1541975415318", "id"],
+        ["css=#editable-text-1541975415318", "css:finder"],
+        ["xpath=//div[@id='editable-text-1541975415318']", "xpath:attributes"],
+        ["xpath=//div[@id='title-1541975415318']/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e465fcee-92b3-4258-a6ef-6a31f3e9812f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=editable-text-1541975415318",
+      "targets": [
+        ["id=editable-text-1541975415318", "id"],
+        ["css=#editable-text-1541975415318", "css:finder"],
+        ["xpath=//div[@id='editable-text-1541975415318']", "xpath:attributes"],
+        ["xpath=//div[@id='title-1541975415318']/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6251454d-b036-4297-95c5-b1ce2211247a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#editable-text-1541975415318 > span",
+      "targets": [
+        ["css=#editable-text-1541975415318 > span", "css:finder"],
+        ["xpath=//div[@id='editable-text-1541975415318']/span", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Bendito Cacao 70% 360g')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee9b7443-698a-494d-b17f-470e6eced645",
+      "comment": "",
+      "command": "click",
+      "target": "css=#editable-text-1541975415305 > div:nth-child(3) > span",
+      "targets": [
+        ["css=#editable-text-1541975415305 > div:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='editable-text-1541975415305']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/div[2]/div/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'cs brigadeiro 280g')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b025c611-a7e5-4859-a0a9-50440eaba17f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#editable-text-1541975415343 > span:nth-child(1)",
+      "targets": [
+        ["css=#editable-text-1541975415343 > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='editable-text-1541975415343']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ovo de Páscoa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0fd818e2-c009-4ba6-978e-fa181230794e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d75611c2-8f8b-4c3f-a2de-8b2e95940f8c"]
+  }],
+  "urls": ["https://www.cacaushow.com.br/"],
+  "plugins": []
+}

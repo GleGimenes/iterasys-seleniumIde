@@ -1,0 +1,240 @@
+{
+  "id": "6c52279b-3fbc-4eb8-97ed-c082cbfe9929",
+  "version": "2.0",
+  "name": "Compra de produto",
+  "url": "https://www.cacaushow.com.br",
+  "tests": [{
+    "id": "11968e33-f48b-4098-8f22-690a26550622",
+    "name": "Compra de produto",
+    "commands": [{
+      "id": "6dde28b1-0386-4854-96e3-69f04b70aadc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f9e15ce-d228-420f-8eaf-fee528d16201",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c06ad30-1ec6-470e-b9c3-93ed340d6ca7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5723ed85-6f53-4542-925d-09a59cbbc742",
+      "comment": "",
+      "command": "click",
+      "target": "id=image-1541975415305",
+      "targets": [
+        ["id=image-1541975415305", "id"],
+        ["css=#image-1541975415305", "css:finder"],
+        ["xpath=//div[@id='image-1541975415305']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap-image-1541975415305']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edcde9f3-1e42-4b99-861d-97c657c1a8e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div[3]/div[4]/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab0d514-8706-4a6c-86e0-46c3055966ad",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div[3]/div[4]/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "731c3fcb-3343-4c3b-b7b3-697f3bd1c0b2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[@id='maincontent']/div/div/div[3]/div[4]/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar ao carrinho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29fce4dc-1bf3-4009-89b5-9ac4c9d0677d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.it__minicart .minicart-link > .minicart-quantity",
+      "targets": [
+        ["css=.it__minicart .minicart-link > .minicart-quantity", "css:finder"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a2e72a-eb34-46ea-b1d3-38f4d6c8891d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkout-btn",
+      "targets": [
+        ["css=.checkout-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Finalizar Compra')]", "xpath:link"],
+        ["xpath=//div[@id='maincontent']/div/div[2]/div/div[2]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.cacaushow.com.br/on/demandware.store/Sites-CacauShow-Site/default/Checkout-Login')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71208a6d-971b-4e8f-8f83-3d97a71cc501",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d5cb1af-b6bf-45e0-bd74-f5ba79c7ceaf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=login-form-email", "id"],
+        ["name=loginEmail", "name"],
+        ["css=#login-form-email", "css:finder"],
+        ["xpath=//input[@id='login-form-email']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "teste@teste2.qualidade.com"
+    }, {
+      "id": "21ee3c7e-951b-4a37-ad4c-a6fe1aa24663",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-btn-toggle",
+      "targets": [
+        ["id=login-btn-toggle", "id"],
+        ["css=#login-btn-toggle", "css:finder"],
+        ["xpath=//button[@id='login-btn-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b52d8df-cf1d-4652-b7d4-0447009b3300",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-form-password",
+      "targets": [
+        ["id=login-form-password", "id"],
+        ["name=loginPassword", "name"],
+        ["css=#login-form-password", "css:finder"],
+        ["xpath=//input[@id='login-form-password']", "xpath:attributes"],
+        ["xpath=//div[@id='show_hide_password']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e36a5c-4dd4-4f64-893f-3401327e029d",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-form-password",
+      "targets": [
+        ["id=login-form-password", "id"],
+        ["name=loginPassword", "name"],
+        ["css=#login-form-password", "css:finder"],
+        ["xpath=//input[@id='login-form-password']", "xpath:attributes"],
+        ["xpath=//div[@id='show_hide_password']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Teste12345"
+    }, {
+      "id": "ee73967c-653a-410c-81a2-007b453d4699",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-btn-toggle",
+      "targets": [
+        ["id=login-btn-toggle", "id"],
+        ["css=#login-btn-toggle", "css:finder"],
+        ["xpath=//button[@id='login-btn-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='maincontent']/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c1f24f1-3002-47de-b735-b8064f065612",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa744a65-89b7-4c2e-a8f0-e0f2a3364410",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-nextStep1:nth-child(1)",
+      "targets": [
+        ["css=.js-nextStep1:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-main']/div/div[3]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03499b8f-749a-4ac6-be6d-3e8c793d8c8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pix-tab",
+      "targets": [
+        ["css=.pix-tab", "css:finder"],
+        ["xpath=//ul[@id='paymentOptions']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#pix-content')]", "xpath:href"],
+        ["xpath=//fieldset/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ce2c1d-ee94-4d3a-b90e-9659c5aaa4ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-summary",
+      "targets": [
+        ["css=.next-summary", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-main']/div[2]/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d71f4882-61bb-44eb-8058-8ae05ea23a0d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9f350ef3-4493-4487-8928-bbbbcb4288df",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11968e33-f48b-4098-8f22-690a26550622"]
+  }],
+  "urls": ["https://www.cacaushow.com.br/"],
+  "plugins": []
+}
