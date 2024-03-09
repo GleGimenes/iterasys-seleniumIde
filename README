@@ -1,0 +1,43 @@
+
+Projeto de Automação de Testes para a Cacau Show
+Este projeto consiste em uma automação de testes para o site da Cacau Show,
+utilizando a biblioteca Selenium em Python e a estrutura de testes do Pytest. 
+Os testes automatizados abrangem diferentes funcionalidades do site, como cadastro de usuário, 
+compra de produtos e acessibilidade. Desenvolvido para fins de estudo e prática de testes automatizados
+para escola de testes da Iterasys, no modulo inicial de testes automatizados.
+
+Estrutura do Projeto
+O projeto está organizado da seguinte forma:
+
+Arquivos de Teste:
+test_cadastro_usuario.py: Contém os testes relacionados ao cadastro de usuários.
+test_compra_produto.py: Contém os testes relacionados à compra de produtos.
+test_botao_acessibilidade_libras.py: Contém os testes relacionados ao botão de acessibilidade em Libras.
+Pré-requisitos
+Certifique-se de ter instalado os seguintes componentes:
+
+Python
+Selenium
+Pytest
+Webdriver (no caso, Chrome)
+Executando os Testes
+Para executar os testes, siga estas etapas:
+
+Clone o repositório para sua máquina local.
+Certifique-se de ter os pré-requisitos instalados.
+Navegue até o diretório raiz do projeto.
+Execute o comando pytest no terminal para rodar todos os testes.
+Estratégia de Testes
+Cadastro de Usuário: Os testes garantem que o processo de cadastro de usuário no site da Cacau Show funciona corretamente, verificando se todas as etapas são concluídas com sucesso.
+
+Compra de Produto: Os testes automatizados simulam a compra de um produto no site, desde a seleção até o pagamento, para garantir que o processo de compra esteja funcionando conforme o esperado.
+
+Botão de Acessibilidade em Libras: Os testes validam se o botão de acessibilidade em Libras está presente e funcional, garantindo que os recursos de acessibilidade sejam fornecidos aos usuários.
+
+Contribuições
+Contribuições são bem-vindas! Se você identificar melhorias, correções ou novos testes que possam ser adicionados ao projeto, sinta-se à vontade para criar uma issue ou enviar um pull request.
+
+Autores
+Gleidson Gimenes
+Licença
+Este projeto está licenciado sob a Licença MIT.
