@@ -366,6 +366,632 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "a0d2de7d-4ec1-4978-bcec-c5c087651b1c",
+    "name": "Cadastro de usuário 2",
+    "commands": [{
+      "id": "6f164676-1d1a-4edf-a451-0aebdc630d8b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0ecf372-6470-4797-9a53-6aec0fdb5afe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a175e66e-db4e-4494-80d6-8ca5cf14921f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a268dd9b-31a3-4a40-af77-68df542a926b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=ul:nth-child(2) > li:nth-child(2) .it__above--text",
+      "targets": [
+        ["css=ul:nth-child(2) > li:nth-child(2) .it__above--text", "css:finder"],
+        ["xpath=//ul[2]/li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Cacau Lovers')]", "xpath:innerText"]
+      ],
+      "value": "Cacau Lovers"
+    }, {
+      "id": "43757c51-9454-45d3-a23b-a9aa9d8437e5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mt-5 > .slick-list .slick-slide:nth-child(4) img",
+      "targets": [
+        ["css=.mt-5 > .slick-list .slick-slide:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='Ovo de Páscoa Harry Potter ']", "xpath:img"],
+        ["xpath=//div[@id='maincontent']/div[2]/div/div[3]/div/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dfb74bf-b307-41bf-b0bd-ea76bfaa3887",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mt-5 > .slick-list .slick-slide:nth-child(4) img",
+      "targets": [
+        ["css=.mt-5 > .slick-list .slick-slide:nth-child(4) img", "css:finder"],
+        ["xpath=//img[@alt='Ovo de Páscoa Harry Potter ']", "xpath:img"],
+        ["xpath=//div[@id='maincontent']/div[2]/div/div[3]/div/div/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a80a2f7-4313-4b83-8abc-f3d9dea641a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(2) > li:nth-child(2) .it__above--text",
+      "targets": [
+        ["css=ul:nth-child(2) > li:nth-child(2) .it__above--text", "css:finder"],
+        ["xpath=//ul[2]/li[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Cacau Lovers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8113ef33-e33d-4b11-bd17-6f0164b1cbdf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33aecb37-64a3-4dbd-818c-07d1f6ebb3ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=cadastro",
+      "targets": [
+        ["id=cadastro", "id"],
+        ["css=#cadastro", "css:finder"],
+        ["xpath=//button[@id='cadastro']", "xpath:attributes"],
+        ["xpath=//main[@id='lp-lovers']/header/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Faça já o seu cadastro!')]", "xpath:innerText"]
+      ],
+      "value": "Faça já o seu cadastro!"
+    }, {
+      "id": "52778185-7ad0-4958-8dd0-400679d3401c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cadastro",
+      "targets": [
+        ["id=cadastro", "id"],
+        ["css=#cadastro", "css:finder"],
+        ["xpath=//button[@id='cadastro']", "xpath:attributes"],
+        ["xpath=//main[@id='lp-lovers']/header/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Faça já o seu cadastro!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6bd7585-c5aa-4f51-9564-1f8d1f2da813",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.etapa__0 > p:nth-child(1)",
+      "targets": [
+        ["css=.etapa__0 > p:nth-child(1)", "css:finder"],
+        ["xpath=//form/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Você ainda não é um Cacau Lover?')]", "xpath:innerText"]
+      ],
+      "value": "Você ainda não é um Cacau Lover?"
+    }, {
+      "id": "4f6b8c55-a326-4ec2-8e07-cf4099d65b5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lovers-input__container:nth-child(4) > #cpf",
+      "targets": [
+        ["css=.lovers-input__container:nth-child(4) > #cpf", "css:finder"],
+        ["xpath=(//input[@id='cpf'])[2]", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca3d0057-49ee-401e-992e-90e1ff5fdcbe",
+      "comment": "",
+      "command": "type",
+      "target": "css=.lovers-input__container:nth-child(4) > #cpf",
+      "targets": [
+        ["css=.lovers-input__container:nth-child(4) > #cpf", "css:finder"],
+        ["xpath=(//input[@id='cpf'])[2]", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "403.094.270-96"
+    }, {
+      "id": "c354ff6a-70ca-464b-9e6f-718a3bb72b5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5296ac8-9075-4331-89c1-f3bb4b1fcca0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.nome",
+      "targets": [
+        ["css=.nome", "css:finder"],
+        ["xpath=//form/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Por favor, informe seu nome e sobrenome')]", "xpath:innerText"]
+      ],
+      "value": "Por favor, informe seu nome e sobrenome"
+    }, {
+      "id": "fe8c0aa9-a94c-493f-bd71-7c5e4fa97211",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "437bdb89-da0b-4f0d-9232-0b72db8b82f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Teste"
+    }, {
+      "id": "e4636e6b-6c3e-49e9-bea0-f6aa3dd294ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=sobrenome",
+      "targets": [
+        ["id=sobrenome", "id"],
+        ["css=#sobrenome", "css:finder"],
+        ["xpath=//input[@id='sobrenome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3002823c-9d63-45a9-a672-e5bb78035329",
+      "comment": "",
+      "command": "type",
+      "target": "id=sobrenome",
+      "targets": [
+        ["id=sobrenome", "id"],
+        ["css=#sobrenome", "css:finder"],
+        ["xpath=//input[@id='sobrenome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Qualidade"
+    }, {
+      "id": "2b73c650-315d-4dbe-8567-a909a46402c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b3b5f9f-a1a0-44da-85f9-164b138a4489",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.data__nascimento",
+      "targets": [
+        ["css=.data__nascimento", "css:finder"],
+        ["xpath=//div[3]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Qual é a sua data de nascimento?')]", "xpath:innerText"]
+      ],
+      "value": "Qual é a sua data de nascimento?"
+    }, {
+      "id": "035e5da2-fb94-404e-a223-571d46a5bbaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataNascimento",
+      "targets": [
+        ["id=dataNascimento", "id"],
+        ["css=#dataNascimento", "css:finder"],
+        ["xpath=//input[@id='dataNascimento']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3288c645-7ccb-472f-9f77-fbe74ee4638e",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataNascimento",
+      "targets": [
+        ["id=dataNascimento", "id"],
+        ["css=#dataNascimento", "css:finder"],
+        ["xpath=//input[@id='dataNascimento']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "12/09/1984"
+    }, {
+      "id": "3970d537-06f9-4ba4-97ff-5fceea23e19a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee8c905d-173e-497a-acfe-60bf0b527293",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.info__contato",
+      "targets": [
+        ["css=.info__contato", "css:finder"],
+        ["xpath=//div[4]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Quais as suas informações de contato?')]", "xpath:innerText"]
+      ],
+      "value": "Quais as suas informações de contato?"
+    }, {
+      "id": "2fb0c825-d473-46bf-81ca-27901dfaa799",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ad6e7c4-577b-4969-9f23-3567c238fbdc",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "teste123.teste@qualidade.com"
+    }, {
+      "id": "b3a0a68c-6992-4f84-8833-d72ba09c5785",
+      "comment": "",
+      "command": "click",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3692d8b1-5800-4169-a29d-eff3e53cc39e",
+      "comment": "",
+      "command": "type",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 99990-0001"
+    }, {
+      "id": "b7b3c26e-d174-45d0-9172-ccbba2f81a4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bb9b77e-478d-46f0-9a47-f48305ec2983",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.senha",
+      "targets": [
+        ["css=.senha", "css:finder"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Cadastre sua senha')]", "xpath:innerText"]
+      ],
+      "value": "Cadastre sua senha"
+    }, {
+      "id": "c8f88f12-b622-4733-982e-bda631441a34",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c72a11a2-db69-44a2-89e3-875a4fd174f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "Gg123456"
+    }, {
+      "id": "d166bbd0-ded9-406d-a6e2-9f72bb488ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b1d7e2c-f8d4-43a3-8c26-9814b9acd1b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmarSenha",
+      "targets": [
+        ["id=confirmarSenha", "id"],
+        ["css=#confirmarSenha", "css:finder"],
+        ["xpath=//input[@id='confirmarSenha']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f96fd05-e773-49f0-a859-8131ad3fb066",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmarSenha",
+      "targets": [
+        ["id=confirmarSenha", "id"],
+        ["css=#confirmarSenha", "css:finder"],
+        ["xpath=//input[@id='confirmarSenha']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "Gg123456"
+    }, {
+      "id": "fc976cf0-ff27-425a-9246-711ed9d365df",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.lovers-checkbox__container > label",
+      "targets": [
+        ["css=.lovers-checkbox__container > label", "css:finder"],
+        ["xpath=//div[6]/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Li e aceito os termos e condições do Programa Cacau Lovers')]", "xpath:innerText"]
+      ],
+      "value": "Li e aceito os termos e condições do Programa Cacau Lovers"
+    }, {
+      "id": "bad1477d-9fe3-4070-9400-f04b54e3aee5",
+      "comment": "",
+      "command": "click",
+      "target": "id=termos",
+      "targets": [
+        ["id=termos", "id"],
+        ["name=termos", "name"],
+        ["css=#termos", "css:finder"],
+        ["xpath=//input[@id='termos']", "xpath:attributes"],
+        ["xpath=//div[6]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7334d25c-9344-4505-9562-3d2a7ba29f0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cadastrar",
+      "targets": [
+        ["id=cadastrar", "id"],
+        ["css=#cadastrar", "css:finder"],
+        ["xpath=//button[@id='cadastrar']", "xpath:attributes"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "711af290-19c5-4c55-afa0-cb239a9ed6ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cadastro__form .header__voltar__acesso",
+      "targets": [
+        ["css=.cadastro__form .header__voltar__acesso", "css:finder"],
+        ["xpath=//app-cadastro/form/header/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23b9d104-8dbe-4dff-8816-cae6201488d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cadastro__form .header__voltar__acesso",
+      "targets": [
+        ["css=.cadastro__form .header__voltar__acesso", "css:finder"],
+        ["xpath=//app-cadastro/form/header/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30869e18-de30-4acb-90c4-12226e80bda5",
+      "comment": "",
+      "command": "click",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0720022-8d86-47f9-96a5-eeaa73674a69",
+      "comment": "",
+      "command": "type",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 99990-1111"
+    }, {
+      "id": "69b10ab5-45fb-49a7-9565-e279fc5d8c1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c97df898-996e-497f-a10f-a433b6fb2f8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f505dc6a-e526-47fd-b37f-b7403f35d1d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cadastrar",
+      "targets": [
+        ["id=cadastrar", "id"],
+        ["css=#cadastrar", "css:finder"],
+        ["xpath=//button[@id='cadastrar']", "xpath:attributes"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66d342ce-6150-4a20-8600-e3faa10b5c77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cadastro__form .header__voltar__acesso",
+      "targets": [
+        ["css=.cadastro__form .header__voltar__acesso", "css:finder"],
+        ["xpath=//app-cadastro/form/header/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0aeca4e-4a51-4d9e-8cb9-83e141dc8dc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cadastro__form .header__voltar__acesso",
+      "targets": [
+        ["css=.cadastro__form .header__voltar__acesso", "css:finder"],
+        ["xpath=//app-cadastro/form/header/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Voltar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "556fb8ba-3af6-4237-b37a-5efb360ed20f",
+      "comment": "",
+      "command": "click",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f8a56ea-f2d0-4329-9cd7-d41deba268ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 984253143"
+    }, {
+      "id": "56e3f6a7-cd97-45ac-9ad0-ecc4adb781a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7af0c5a-00f3-41ca-aba7-02f90a2d4950",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__continuar > #continuar",
+      "targets": [
+        ["css=.form__continuar > #continuar", "css:finder"],
+        ["xpath=(//button[@id='continuar'])[2]", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51873c38-7bbc-4186-a0ba-4806cf3f0a55",
+      "comment": "",
+      "command": "click",
+      "target": "id=cadastrar",
+      "targets": [
+        ["id=cadastrar", "id"],
+        ["css=#cadastrar", "css:finder"],
+        ["xpath=//button[@id='cadastrar']", "xpath:attributes"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6b302b-3481-409c-8c1a-2c83c62bc1ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.parabens",
+      "targets": [
+        ["css=.parabens", "css:finder"],
+        ["xpath=//div[7]/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Parabéns Crush!')]", "xpath:innerText"]
+      ],
+      "value": "Parabéns Crush!"
+    }, {
+      "id": "8bc38a05-603d-4eba-b951-7becfc36060c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.visibility > .popup > .popup__fechar .fechar__icone",
+      "targets": [
+        ["css=.visibility > .popup > .popup__fechar .fechar__icone", "css:finder"],
+        ["xpath=//lovers-popup[3]/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "c1cc2fef-ab23-4067-ad33-9081c0ac7868",

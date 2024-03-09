@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-class TestBotaodeacessibilidadeLibras():
+class TestBotaodeacessibilidadeLibras2():
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
@@ -18,31 +18,20 @@ class TestBotaodeacessibilidadeLibras():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_botaodeacessibilidadeLibras(self):
+  def test_botaodeacessibilidadeLibras2(self):
     self.driver.get("https://www.cacaushow.com.br/")
-    self.driver.set_window_size(913, 673)
-    self.driver.execute_script("window.scrollTo(0,0)")
-    self.driver.find_element(By.CSS_SELECTOR, ".btn-rybena-sign-language > .ryb-ignore:nth-child(1)").click()
-    element = self.driver.find_element(By.ID, "rybena-handle-top")
-    actions = ActionChains(self.driver)
-    actions.move_to_element(element).click_and_hold().perform()
-    element = self.driver.find_element(By.ID, "rybena-handle-top")
-    actions = ActionChains(self.driver)
-    actions.move_to_element(element).perform()
-    element = self.driver.find_element(By.ID, "rybena-handle-top")
-    actions = ActionChains(self.driver)
-    actions.move_to_element(element).release().perform()
-    self.driver.find_element(By.ID, "rybena-handle-top").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".content-asset:nth-child(2)").click()
-    self.driver.switch_to.frame(11)
-    self.driver.switch_to.default_content()
-    element = self.driver.find_element(By.ID, "editable-text-1541975415318")
+    self.driver.set_window_size(1552, 832)
+    self.driver.execute_script("window.scrollTo(0,100)")
+    assert self.driver.find_element(By.CSS_SELECTOR, ".content-asset > span").text == "Os melhores momentos são aqui, na Cacau Show!"
+    self.driver.find_element(By.CSS_SELECTOR, ".it__occasion--title").click()
+    element = self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415318 > span")
     actions = ActionChains(self.driver)
     actions.move_to_element(element).perform()
     element = self.driver.find_element(By.CSS_SELECTOR, "body")
     actions = ActionChains(self.driver)
     actions.move_to_element(element, 0, 0).perform()
+    assert self.driver.find_element(By.ID, "editable-text-1541975415318").text == "Ovo de Páscoa\\\\nBendito Cacao 70% 360g"
     self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415318 > span").click()
-    self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415305 > div:nth-child(3) > span").click()
-    self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415343 > span:nth-child(1)").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415305 > div:nth-child(3) > span").text == "cs brigadeiro 280g"
+    self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415305 > span").click()
   

@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-class TestCompradeproduto():
+class TestCompradeproduto2():
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
@@ -18,11 +18,16 @@ class TestCompradeproduto():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_compradeproduto(self):
-    self.driver.get("https://www.cacaushow.com.br/")
-    self.driver.set_window_size(1552, 832)
-    self.driver.execute_script("window.scrollTo(0,0)")
+  def test_compradeproduto2(self):
+    self.driver.get("https://www.cacaushow.com.br/home")
+    self.driver.set_window_size(1536, 816)
+    self.driver.execute_script("window.scrollTo(0,400)")
+    self.driver.execute_script("window.scrollTo(0,972.7999877929688)")
+    assert self.driver.find_element(By.CSS_SELECTOR, "#editable-text-1541975415305 > div:nth-child(3) > span").text == "cs brigadeiro 280g"
     self.driver.find_element(By.ID, "image-1541975415305").click()
+    self.driver.execute_script("window.scrollTo(0,0)")
+    assert self.driver.find_element(By.CSS_SELECTOR, ".product-name").text == "ovo de páscoa cs brigadeiro 280g"
+    assert self.driver.find_element(By.CSS_SELECTOR, ".it__shelf__discountPrice").text == "R$63.99 Preço Exclusivo Lovers"
     self.driver.find_element(By.CSS_SELECTOR, ".add-to-cart").click()
     element = self.driver.find_element(By.CSS_SELECTOR, ".add-to-cart")
     actions = ActionChains(self.driver)
@@ -30,17 +35,26 @@ class TestCompradeproduto():
     element = self.driver.find_element(By.CSS_SELECTOR, "body")
     actions = ActionChains(self.driver)
     actions.move_to_element(element, 0, 0).perform()
-    self.driver.find_element(By.CSS_SELECTOR, ".it__minicart .minicart-link > .minicart-quantity").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, ".it__minicart .minicart-link > .minicart-quantity").text == "0"
+    self.driver.find_element(By.CSS_SELECTOR, ".it__minicart .minicart-link > .minicart-icon").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, ".page-title").text == "Carrinho de Compra"
+    assert self.driver.find_element(By.CSS_SELECTOR, ".line-item-total-price-amount").text == "R$63.99"
     self.driver.find_element(By.CSS_SELECTOR, ".checkout-btn").click()
-    self.driver.execute_script("window.scrollTo(0,0)")
-    self.driver.find_element(By.XPATH, "//div/input").send_keys("teste@teste2.qualidade.com")
+    assert self.driver.find_element(By.CSS_SELECTOR, ".form-title").text == "Entrar ou Criar Conta"
+    self.driver.find_element(By.ID, "login-form-email").click()
+    self.driver.find_element(By.ID, "login-form-email").send_keys("teste@teste2.qualidade.com")
     self.driver.find_element(By.ID, "login-btn-toggle").click()
     self.driver.find_element(By.ID, "login-form-password").click()
     self.driver.find_element(By.ID, "login-form-password").send_keys("Teste12345")
     self.driver.find_element(By.ID, "login-btn-toggle").click()
     self.driver.execute_script("window.scrollTo(0,0)")
+    assert self.driver.find_element(By.CSS_SELECTOR, ".checkout__stepTitle:nth-child(1)").text == "Endereço de Entrega"
     self.driver.find_element(By.CSS_SELECTOR, ".js-nextStep1:nth-child(1)").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, ".checkout-card-step > .checkout__textInfo:nth-child(1)").text == "Resumo"
+    assert self.driver.find_element(By.CSS_SELECTOR, ".shipping-item > .start-lines span").text == "FRETE"
     self.driver.find_element(By.CSS_SELECTOR, ".pix-tab").click()
+    assert self.driver.find_element(By.CSS_SELECTOR, ".title__Payment-bgPix").text == "Você escolheu a forma de pagamento PIX."
     self.driver.find_element(By.CSS_SELECTOR, ".next-summary").click()
     self.driver.execute_script("window.scrollTo(0,0)")
+    assert self.driver.find_element(By.CSS_SELECTOR, ".order-thank-you-msg").text == "Obrigado pelo seu pedido."
   
